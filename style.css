@@ -215,8 +215,8 @@ main {
   position: fixed;
   right: 0px;
   bottom: 0px;
-  max-width: 440px;
-  min-width: 340px;
+  max-width: 30%;
+  min-width: 10%;
   height: auto;
   z-index: 1;
   pointer-events: none;
@@ -278,7 +278,7 @@ main {
         z-index: -1;
 
         &.active {
-          top: 8%;
+          top: 7%;
         }
 
         li {
@@ -411,7 +411,7 @@ main {
       gap: 15px;
 
       .nav-links.active {
-        top: 40px;
+        top: 26px;
       }
 
       .hamburger {
@@ -466,6 +466,7 @@ main {
       .section {
         .head_1 {
           font-size: 20px;
+          top: -1;
         }
 
         .head_2 {
@@ -491,9 +492,14 @@ main {
 }
 
 /* Height Responsive  */
+@media (max-height: 850px) {
+  .fixed-right-img {
+    max-width: 25%;
+  }
+}
 @media (max-height: 700px) {
   .side-menu {
-    justify-content: flex-start;
+    justify-content: space-evenly;
     gap: 20px;
     padding-top: 20px;
 
@@ -512,14 +518,25 @@ main {
       padding: 8px;
     }
   }
+
+  .fixed-right-img {
+    max-width: 25%;
+  }
+}
+
+@media (max-height: 600px) {
+  .fixed-right-img {
+    max-width: 20%;
+  }
 }
 
 @media (max-height: 550px) {
   .side-menu {
     overflow-y: auto;
+    padding-top: 10px;
 
     .menu {
-      gap: 10px;
+      gap: 5px;
     }
   }
 
@@ -536,6 +553,11 @@ main {
   main {
     .main-wrapper {
       max-height: 80dvh;
+      margin-top: 0;
     }
+  }
+
+  .fixed-right-img {
+    max-width: 15%;
   }
 }
