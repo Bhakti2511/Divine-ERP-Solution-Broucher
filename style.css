@@ -1,6 +1,6 @@
 html,
 body {
-  height: 100%;
+  height: 100dvh;
   width: 100%;
   margin: 0;
   display: flex;
@@ -10,6 +10,7 @@ body {
   scroll-behavior: smooth;
   overflow: hidden;
 }
+
 header {
   display: none;
 }
@@ -19,7 +20,9 @@ header {
   left: 20px;
   top: 0px;
   width: 17%;
-  height: 100%;
+  height: 100dvh;
+  max-height: 100dvh;
+  overflow-y: auto;
   padding: 0px 10px;
   color: #dbe7f5;
   display: flex;
@@ -148,7 +151,8 @@ main {
     color: #f5f5f5;
     backdrop-filter: blur(5px);
     border-radius: 8px 5px 5px 8px;
-    max-height: 80vh;
+    max-height: min(80vh, 800px);
+    height: auto;
     overflow-y: auto;
     scrollbar-width: auto;
     scroll-behavior: smooth;
@@ -242,7 +246,7 @@ main {
   }
 }
 
-/* ✅ HIDE MENU ON MOBILE */
+/* Hide side menu and show header */
 @media (max-width: 860px) {
   header {
     display: flex;
@@ -394,11 +398,11 @@ main {
   main {
     max-width: 100%;
     margin: 20px;
-    top: 20px;
+    top: 30px;
   }
 }
-/* Mobile optimization */
-@media (max-width: 530px) {
+
+@media (max-width: 530px), (max-height: 430px) {
   header {
     display: flex;
 
@@ -456,7 +460,7 @@ main {
 
   main {
     .main-wrapper {
-      max-height: 85vh;
+      max-height: 85dvh;
       margin-top: 50px;
 
       .section {
@@ -482,6 +486,56 @@ main {
           font-size: 14px;
         }
       }
+    }
+  }
+}
+
+/* Height Responsive  */
+@media (max-height: 700px) {
+  .side-menu {
+    justify-content: flex-start;
+    gap: 20px;
+    padding-top: 20px;
+
+    .logo {
+      img {
+        height: 36px;
+      }
+
+      .title {
+        font-size: 16px;
+      }
+    }
+
+    .menu a {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+}
+
+@media (max-height: 550px) {
+  .side-menu {
+    overflow-y: auto;
+
+    .menu {
+      gap: 10px;
+    }
+  }
+
+  header {
+    .navbar {
+      padding: 0 20px;
+
+      .actions {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  main {
+    .main-wrapper {
+      max-height: 80dvh;
     }
   }
 }
