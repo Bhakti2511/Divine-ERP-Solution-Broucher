@@ -108,11 +108,11 @@ header {
       }
 
       .fa-whatsapp {
-        color: #269346;
+        color: #65cb83;
       }
 
       .fa-phone-volume {
-        color: #269346;
+        color: #65cb83;
       }
     }
 
@@ -136,6 +136,7 @@ main {
   display: flex;
   flex: 1;
   height: auto;
+  margin-top: -3px;
   justify-content: center;
   align-items: center;
   overflow: visible;
@@ -411,7 +412,7 @@ main {
       gap: 15px;
 
       .nav-links.active {
-        top: 26px;
+        top: 5%;
       }
 
       .hamburger {
@@ -461,11 +462,11 @@ main {
   main {
     .main-wrapper {
       max-height: 85dvh;
-      margin-top: 50px;
+      margin-top: 44px;
 
       .section {
         .head_1 {
-          font-size: 20px;
+          font-size: 22px;
           top: -1;
         }
 
