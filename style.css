@@ -568,3 +568,24 @@ main {
     max-width: 15%;
   }
 }
+
+@media (max-height: 260px) {
+  .nav-links {
+    a {
+      padding: 7px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  .nav-links.active {
+    top: 13%;
+  }
+
+  main {
+    margin: 10px;
+
+    .main-wrapper {
+      max-height: 72dvh;
+    }
+  }
+}
