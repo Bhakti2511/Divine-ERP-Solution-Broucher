@@ -412,7 +412,7 @@ main {
       gap: 15px;
 
       .nav-links.active {
-        top: 5%;
+        top: 7%;
       }
 
       .hamburger {
@@ -494,7 +494,16 @@ main {
 
 @media (max-width: 350px) {
   .nav-links.active {
-    top: 6%;
+    top: 9%;
+  }
+}
+@media (max-width: 306px) {
+  header {
+    .navbar {
+      .nav-links.active {
+        top: 12%;
+      }
+    }
   }
 }
 
