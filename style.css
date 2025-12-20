@@ -492,6 +492,12 @@ main {
   }
 }
 
+@media (max-width: 350px) {
+  .nav-links.active {
+    top: 6%;
+  }
+}
+
 /* Height Responsive  */
 @media (max-height: 850px) {
   .fixed-right-img {
