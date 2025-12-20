@@ -516,12 +516,12 @@ main {
 @media (max-height: 700px) {
   .side-menu {
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 0px;
     padding-top: 20px;
 
     .logo {
       img {
-        height: 36px;
+        height: 30px;
       }
 
       .title {
@@ -531,7 +531,7 @@ main {
 
     .menu a {
       font-size: 14px;
-      padding: 8px;
+      padding: 4px;
     }
   }
 
