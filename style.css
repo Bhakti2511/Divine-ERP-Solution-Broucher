@@ -494,7 +494,7 @@ main {
 
 @media (max-width: 350px) {
   .nav-links.active {
-    top: 9%;
+    top: 9% !important;
   }
 }
 @media (max-width: 306px) {
