@@ -279,7 +279,7 @@ main {
         z-index: -1;
 
         &.active {
-          top: 7%;
+          top: 9%;
         }
 
         li {
