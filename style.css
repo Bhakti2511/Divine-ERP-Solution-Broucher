@@ -403,7 +403,7 @@ main {
   }
 }
 
-@media (max-width: 530px), (max-height: 430px) {
+@media (max-width: 538px), (max-height: 430px) {
   header {
     display: flex;
 
