@@ -466,6 +466,8 @@ main {
 
   main {
     .main-wrapper {
+            max-height: 80vh;
+      
       .section {
         .head_1 {
           font-size: 22px;
