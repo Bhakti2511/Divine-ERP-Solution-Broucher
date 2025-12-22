@@ -549,7 +549,7 @@ main {
   header {
     .navbar {
       .nav-links.active {
-        top: 12%;
+        top: 10%;
       }
     }
   }
