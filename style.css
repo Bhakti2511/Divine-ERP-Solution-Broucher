@@ -17,126 +17,128 @@ header {
 
 .side-menu {
   position: fixed;
-  left: 20px;
-  top: 0px;
+  left: 2rem;
+  top: 0;
   width: 17%;
-  height: 100dvh;
-  max-height: 100dvh;
+  height: 100%;
   overflow-y: auto;
-  padding: 0px 10px;
   color: #dbe7f5;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   z-index: 20;
+  align-items: center;
 
-  .logo {
-    text-align: center;
-
-    img {
-      height: 45px;
-    }
-
-    .title {
-      font-size: 20px;
-      font-weight: 600;
-    }
-  }
-
-  .menu {
+  .side-menu-wraper {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    justify-content: space-between;
+    height: 86vh;
 
-    a {
-      padding: 10px;
-      color: #dbe7f5;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 600;
-      transition: background 0.2s ease, color 0.2s ease;
-      border-radius: 20px;
-      backdrop-filter: blur(6px);
-      border: 1px solid #122e4d;
-      background: #02254c59;
+    .logo {
+      text-align: center;
+      height: 20%;
 
-      i {
-        margin: 0px 10px;
+      img {
+        height: 35%;
+      }
+
+      .title {
+        font-size: 1.25rem;
+        font-weight: 600;
       }
     }
 
-    a:hover {
-      background: #07182b;
-      color: #ffffff;
-    }
-
-    a.active {
-      background: #07182b;
-      color: #fff;
-      font-weight: bold;
-    }
-  }
-
-  .actions {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 8px;
-    flex-wrap: wrap;
-
-    button {
-      min-width: 38px;
-      height: 38px;
-      padding: 0 10px;
-      border: none;
-      border-radius: 6px;
-      background: #122e4d91;
-      font-size: 16px;
-      cursor: pointer;
-      backdrop-filter: blur(6px);
-      border: 1px solid #122e4d;
-
+    .menu {
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      gap: 0.9375rem;
+
+      a {
+        padding: 0.62rem;
+        color: #dbe7f5;
+        text-decoration: none;
+        font-size: 0.93rem;
+        transition: background 0.2s ease, color 0.2s ease;
+        border-radius: 1.25rem;
+        backdrop-filter: blur(6px);
+        border: 1px solid #122e4d;
+        background: #02254c59;
+
+        i {
+          margin: 0px 0.62rem;
+        }
+      }
+
+      a:hover {
+        background: #07182b;
+        color: #ffffff;
+        font-weight: 600;
+      }
+
+      a.active {
+        background: #07182b;
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+
+    .actions {
+      display: flex;
       justify-content: center;
+      align-items: center;
+      gap: 0.62rem;
+      flex-wrap: wrap;
 
-      transition: background-color 0.2s ease, transform 0.1s ease;
+      button {
+        min-width: 2.375rem;
+        height: 2.375rem;
+        padding: 10px;
+        border: none;
+        border-radius: 0.37rem;
+        background: #122e4d91;
+        font-size: 1rem;
+        cursor: pointer;
+        backdrop-filter: blur(6px);
+        border: 1px solid #122e4d;
 
-      i {
-        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: background-color 0.2s ease, transform 0.1s ease;
+
+        i {
+          font-size: 18px;
+        }
+
+        .fa-whatsapp {
+          color: #65cb83;
+        }
+
+        .fa-phone-volume {
+          color: #65cb83;
+        }
       }
 
-      .fa-whatsapp {
-        color: #65cb83;
+      button:hover {
+        background: rgba(112, 168, 248, 0.25);
       }
 
-      .fa-phone-volume {
-        color: #65cb83;
+      button:active {
+        transform: scale(0.95);
       }
-    }
 
-    button:hover {
-      background: rgba(112, 168, 248, 0.25);
-    }
-
-    button:active {
-      transform: scale(0.95);
-    }
-
-    button:not(:has(i)) {
-      font-weight: bold;
-      font-size: 17px;
+      button:not(:has(i)) {
+        font-weight: bold;
+        font-size: 17px;
+      }
     }
   }
 }
 
 main {
-  max-width: 100%;
+  width: 90%;
   display: flex;
   flex: 1;
   height: auto;
-  margin-top: -3px;
   justify-content: center;
   align-items: center;
   overflow: visible;
@@ -145,14 +147,12 @@ main {
   place-self: anchor-center;
 
   .main-wrapper {
-    /* width: 100%; */
-    max-width: 600px;
-    min-width: 200px;
+    width: 56%;
     background: #02254c59;
     color: #f5f5f5;
-    backdrop-filter: blur(5px);
-    border-radius: 8px 5px 5px 8px;
-    max-height: min(80vh, 800px);
+    backdrop-filter: blur(0.3125rem);
+    border-radius: 0.6rem 0.3125rem 0.3125rem 0.6rem;
+    max-height: 86vh;
     height: auto;
     overflow-y: auto;
     scrollbar-width: auto;
@@ -167,32 +167,32 @@ main {
 
     .section {
       .head_1 {
-        font-size: 24px;
+        font-size: 1.5rem;
         background-color: #07182b;
         color: #dbe7f5;
-        padding: 10px 20px;
-        border-radius: 3px 0 0 3px;
+        padding: 0.62rem 1.25rem;
+        border-radius: 0.1875rem 0 0 0.1875rem;
         position: sticky;
         top: 0;
       }
 
       .head_2 {
-        margin-top: 20px;
-        margin-left: 15px;
+        margin-top: 1.25rem;
+        margin-left: 0.9375rem;
         color: #f5f5f5;
-        font-size: 22px;
+        font-size: 1.375rem;
         font-weight: 600;
       }
 
       ul {
-        margin-top: 20px;
+        margin-top: 1.25rem;
         list-style-type: "\2713";
       }
 
       li {
-        margin-top: 10px;
-        margin-left: 5px;
-        margin-right: 10px;
+        margin-top: 0.62rem;
+        margin-left: 0.3125rem;
+        margin-right: 0.62rem;
         padding-left: 0.5em;
       }
 
@@ -208,7 +208,7 @@ main {
 
   .main-wrapper::-webkit-scrollbar-thumb {
     background: #07182b;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0 0.62rem 0.62rem 0;
   }
 }
 
@@ -231,8 +231,12 @@ main {
     width: 25%;
   }
   main {
-    max-width: 80%;
-    margin: 0 20px 0 auto;
+    width: 90%;
+    justify-content: right;
+
+    .main-wrapper {
+      width: 70%;
+    }
   }
 }
 
@@ -243,7 +247,7 @@ main {
   }
 
   main {
-    max-width: 72%;
+    width: 80%;
   }
 }
 
@@ -257,7 +261,7 @@ main {
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      padding: 10px 20px;
+      padding: 0.5rem 1rem;
       background-color: #06213fbd;
 
       color: #dbe7f5;
@@ -287,15 +291,15 @@ main {
         }
 
         a {
-          padding: 10px;
+          padding: 0.62rem;
           color: #dbe7f5;
           text-decoration: none;
-          font-size: 15px;
+          font-size: 0.9rem;
           font-weight: 600;
           transition: background 0.2s ease, color 0.2s ease;
 
           i {
-            margin: 0px 10px;
+            margin: 0 0.62rem;
           }
         }
 
@@ -313,9 +317,9 @@ main {
 
         .bar {
           display: block;
-          width: 25px;
-          height: 3px;
-          margin: 5px auto;
+          width: 1.5625rem;
+          height: 0.1875rem;
+          margin: 0.3125rem auto;
           background-color: white;
           transition: 0.3s;
         }
@@ -324,15 +328,15 @@ main {
       .logo {
         text-align: center;
         display: flex;
-        gap: 10px;
+        gap: 0.62rem;
         align-items: center;
 
         img {
-          height: 30px;
+          height: 1.875rem;
         }
 
         .title {
-          font-size: 18px;
+          font-size: 1.2rem;
           font-weight: 600;
         }
       }
@@ -341,18 +345,18 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 0.62rem;
         margin-top: 8px;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
 
         button {
           min-width: 38px;
           height: 38px;
-          padding: 0 10px;
+          padding: 0 0.62rem;
           border: none;
           border-radius: 6px;
           background: #122e4d91;
-          font-size: 16px;
+          font-size: 1rem;
           cursor: pointer;
           backdrop-filter: blur(6px);
           border: 1px solid #122e4d;
@@ -364,7 +368,7 @@ main {
           transition: background-color 0.2s ease, transform 0.1s ease;
 
           i {
-            font-size: 18px;
+            font-size: 1.25rem;
           }
 
           .fa-whatsapp {
@@ -397,9 +401,11 @@ main {
   }
 
   main {
-    max-width: 100%;
-    margin: 20px;
-    top: 30px;
+    top: 4rem;
+
+    .main-wrapper {
+      width: 100%;
+    }
   }
 }
 
@@ -408,8 +414,8 @@ main {
     display: flex;
 
     .navbar {
-      padding: 5px 10px;
-      gap: 15px;
+      padding: 5px 0.62rem;
+      gap: 0.92rem;
 
       .nav-links.active {
         top: 7%;
@@ -423,7 +429,7 @@ main {
 
         .bar {
           display: block;
-          width: 20px;
+          width: 1.25rem;
           height: 2px;
           margin: 5px auto;
           background-color: #f5f5f5;
@@ -432,15 +438,14 @@ main {
       }
 
       .logo {
-        gap: 10px;
+        gap: 0.62rem;
 
         img {
-          height: 25px;
+          height: 1.56rem;
         }
 
         .title {
-          font-size: 14px;
-          font-weight: 500;
+          font-size: 1rem;
         }
       }
 
@@ -452,7 +457,7 @@ main {
           height: 32px;
 
           i {
-            font-size: 16px;
+            font-size: 1rem;
           }
         }
       }
@@ -461,9 +466,6 @@ main {
 
   main {
     .main-wrapper {
-      max-height: 85dvh;
-      margin-top: 44px;
-
       .section {
         .head_1 {
           font-size: 22px;
@@ -471,13 +473,13 @@ main {
         }
 
         .head_2 {
-          font-size: 18px;
-          margin-top: 10px;
-          margin-left: 10px;
+          font-size: 1.25rem;
+          margin-top: 0.62rem;
+          margin-left: 0.62rem;
         }
         ul {
-          margin-left: 0px;
-          margin-top: 10px;
+          margin-left: 0;
+          margin-top: 0.62rem;
         }
 
         li {
@@ -492,16 +494,50 @@ main {
   }
 }
 
-@media (max-width: 350px) {
-  .nav-links.active {
-    top: 9% !important;
+@media (max-width: 349px) {
+  header {
+    .navbar {
+      .nav-links.active {
+        top: 9%;
+      }
+    }
   }
 }
 @media (max-width: 306px) {
   header {
     .navbar {
+      gap: 0.25rem;
+
+      .logo {
+        gap: 0.35rem;
+      }
+
       .nav-links.active {
-        top: 12% !important;
+        top: 12%;
+      }
+
+      .actions {
+        gap: 0.35rem;
+      }
+    }
+  }
+
+  main {
+    .main-wrapper {
+      .section {
+        .head_1 {
+          font-size: 18px;
+          padding: 0.35rem 0.65rem;
+        }
+
+        .head_2 {
+          font-size: 18px;
+          margin: 0 0.65rem;
+        }
+
+        ul {
+          margin-top: 0.35rem;
+        }
       }
     }
   }
@@ -513,25 +549,25 @@ main {
     max-width: 25%;
   }
 }
+
 @media (max-height: 700px) {
   .side-menu {
     justify-content: space-evenly;
-    gap: 0px;
-    padding-top: 20px;
+    gap: 0;
 
     .logo {
       img {
-        height: 30px;
+        height: 36px;
       }
 
       .title {
-        font-size: 16px;
+        font-size: 1rem;
+        font-weight: 500;
       }
     }
 
     .menu a {
-      font-size: 14px;
-      padding: 4px;
+      font-size: 0.86rem;
     }
   }
 
@@ -541,6 +577,20 @@ main {
 }
 
 @media (max-height: 600px) {
+  .side-menu {
+    .side-menu-wraper {
+      .logo {
+        .title {
+          font-size: 1rem;
+        }
+      }
+
+      .menu {
+        gap: 0.3rem;
+      }
+    }
+  }
+
   .fixed-right-img {
     max-width: 20%;
   }
@@ -549,26 +599,32 @@ main {
 @media (max-height: 550px) {
   .side-menu {
     overflow-y: auto;
-    padding-top: 10px;
 
-    .menu {
-      gap: 5px;
+    .side-menu-wraper {
+      height: 86vh;
+
+      .actions {
+        button {
+          min-width: 2rem;
+          height: 2rem;
+          padding: 5px;
+        }
+      }
     }
   }
 
   header {
     .navbar {
-      padding: 0 20px;
+      padding: 0 1.25rem;
 
       .actions {
-        margin-top: 10px;
+        margin-top: 0.62rem;
       }
     }
   }
 
   main {
     .main-wrapper {
-      max-height: 80dvh;
       margin-top: 0;
     }
   }
@@ -578,20 +634,36 @@ main {
   }
 }
 
-@media (max-height: 330px) {
-  .nav-links {
-    a {
-      padding: 7px;
-      font-size: 14px;
-      font-weight: 500;
+@media (max-height: 450px) {
+  .side-menu {
+    width: 20%;
+
+    .side-menu-wraper {
+      .logo {
+        .title {
+          font-size: 0.8rem;
+        }
+      }
+
+      .menu {
+        a {
+          padding: 0.4rem;
+          font-size: 0.8rem;
+        }
+      }
+
+      .actions {
+        button {
+          min-width: 1.5rem;
+          height: 1.7rem;
+          padding: 6px;
+        }
+      }
     }
-  }
-  .nav-links.active {
-    top: 13%;
   }
 
   main {
-    margin: 10px;
+    margin: 0.62rem;
 
     .main-wrapper {
       max-height: 72dvh;
