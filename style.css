@@ -6,7 +6,7 @@ body {
   display: flex;
   flex-flow: column;
   background: linear-gradient(#001b2d38), url("10F1.jpg") center/cover no-repeat;
-  font-family: Robot, "Segoe UI light", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Roboto, "Segoe UI light", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
   overflow: hidden;
 }
@@ -143,7 +143,7 @@ main {
   align-items: center;
   overflow: visible;
   z-index: 10;
-  position: absolute;
+  position: relative;
   place-self: anchor-center;
 
   .main-wrapper {
@@ -157,6 +157,7 @@ main {
     overflow-y: auto;
     scrollbar-width: auto;
     scroll-behavior: smooth;
+    scrollbar-gutter: stable edges;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
       rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
       rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -401,8 +402,6 @@ main {
   }
 
   main {
-    top: 4rem;
-
     .main-wrapper {
       width: 100%;
     }
@@ -466,8 +465,8 @@ main {
 
   main {
     .main-wrapper {
-            max-height: 80vh;
-      
+      max-height: 80vh;
+
       .section {
         .head_1 {
           font-size: 22px;
@@ -500,11 +499,12 @@ main {
   header {
     .navbar {
       .nav-links.active {
-        top: 10%;
+        top: 12%;
       }
     }
   }
 }
+
 @media (max-width: 306px) {
   header {
     .navbar {
@@ -515,7 +515,7 @@ main {
       }
 
       .nav-links.active {
-        top: 12%;
+        top: 13%;
       }
 
       .actions {
@@ -549,12 +549,11 @@ main {
   header {
     .navbar {
       .nav-links.active {
-        top: 10%;
+        top: 12%;
       }
     }
   }
 }
-
 /* Height Responsive  */
 @media (max-height: 850px) {
   .fixed-right-img {
@@ -638,7 +637,7 @@ main {
   main {
     .main-wrapper {
       margin-top: 0;
-            max-height: 80vh;
+      max-height: 80vh;
     }
   }
 
