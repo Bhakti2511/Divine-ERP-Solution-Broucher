@@ -546,7 +546,7 @@ main {
 /* Height Responsive  */
 @media (max-height: 850px) {
   .fixed-right-img {
-    max-width: 25%;
+    max-width: 30%;
   }
 }
 
@@ -592,7 +592,7 @@ main {
   }
 
   .fixed-right-img {
-    max-width: 20%;
+    max-width: 23%;
   }
 }
 
@@ -630,7 +630,13 @@ main {
   }
 
   .fixed-right-img {
-    max-width: 15%;
+    max-width: 19%;
+  }
+}
+
+@media (max-height: 400px) {
+  .fixed-right-img {
+    max-width: 20%;
   }
 }
 
@@ -668,5 +674,11 @@ main {
     .main-wrapper {
       max-height: 72dvh;
     }
+  }
+}
+
+@media (max-height: 450px) {
+  .fixed-right-img {
+    max-width: 16%;
   }
 }
