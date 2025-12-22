@@ -500,7 +500,7 @@ main {
   header {
     .navbar {
       .nav-links.active {
-        top: 9%;
+        top: 10%;
       }
     }
   }
@@ -540,6 +540,16 @@ main {
         ul {
           margin-top: 0.35rem;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) and (min-width: 330px) {
+  header {
+    .navbar {
+      .nav-links.active {
+        top: 12%;
       }
     }
   }
