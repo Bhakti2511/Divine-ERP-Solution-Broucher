@@ -8,7 +8,8 @@ body {
   background: linear-gradient(#001b2d38), url("10F1.jpg") center/cover no-repeat;
   font-family: Roboto, "Segoe UI light", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 header {
