@@ -499,7 +499,7 @@ main {
   }
 }
 
-@media (max-width: 349px) {
+@media (max-width: 357px) {
   header {
     .navbar {
       .nav-links.active {
@@ -509,7 +509,7 @@ main {
   }
 }
 
-@media (max-width: 306px) {
+@media (max-width: 307px) {
   header {
     .navbar {
       gap: 0.25rem;
@@ -549,7 +549,7 @@ main {
   header {
     .navbar {
       .nav-links.active {
-        top: calc(100% - 87%);
+        top: calc(100% - 89%);
       }
 
       .logo {
@@ -562,11 +562,21 @@ main {
   }
 }
 
-@media (max-width: 357px) and (min-width: 347px) {
+@media (max-width: 261px) {
   header {
     .navbar {
       .nav-links.active {
-        top: calc(100% - 90%);
+        top: calc(100% - 87%);
+      }
+    }
+  }
+}
+
+@media (max-width: 222px) {
+  header {
+    .navbar {
+      .nav-links.active {
+        top: calc(100% - 85%);
       }
     }
   }
