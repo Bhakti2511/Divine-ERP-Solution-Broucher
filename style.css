@@ -292,6 +292,7 @@ main {
 
         &.active {
           top: 9%;
+                    padding: 0;
         }
 
         li {
