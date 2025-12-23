@@ -553,6 +553,23 @@ main {
   }
 }
 
+@media (max-width: 290px) {
+  header {
+    .navbar {
+      .nav-links.active {
+        top: 14%;
+      }
+
+      .logo {
+        flex-direction: column;
+        .title {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 370px) and (min-width: 330px) {
   header {
     .navbar {
