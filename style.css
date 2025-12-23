@@ -499,7 +499,7 @@ main {
   }
 }
 
-@media (max-width: 357px) {
+@media (max-width: 359px) {
   header {
     .navbar {
       .nav-links.active {
