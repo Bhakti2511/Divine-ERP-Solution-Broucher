@@ -562,25 +562,16 @@ main {
   }
 }
 
-/* @media (max-width: 370px) and (min-width: 330px) {
+@media (max-width: 357px) and (min-width: 347px) {
   header {
     .navbar {
       .nav-links.active {
-        top: 12%;
+        top: calc(100% - 90%);
       }
     }
   }
-} */
+}
 
-/* @media (max-width: 320px) and (min-width: 305px) {
-  header {
-    .navbar {
-      .nav-links.active {
-        top: 15%;
-      }
-    }
-  }
-} */
 /* Height Responsive  */
 @media (max-height: 850px) {
   .fixed-right-img {
