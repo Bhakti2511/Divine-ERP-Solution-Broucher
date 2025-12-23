@@ -292,7 +292,7 @@ main {
 
         &.active {
           top: 9%;
-                    padding: 0;
+          padding: 0;
         }
 
         li {
@@ -355,7 +355,6 @@ main {
         justify-content: center;
         align-items: center;
         gap: 0.62rem;
-        margin-top: 8px;
         flex-wrap: nowrap;
 
         button {
@@ -462,6 +461,7 @@ main {
         button {
           min-width: 30px;
           height: 32px;
+          padding: 0;
 
           i {
             font-size: 1rem;
@@ -473,7 +473,7 @@ main {
 
   main {
     .main-wrapper {
-      max-height: 74vh;
+      max-height: 80vh;
 
       .section {
         .head_1 {
@@ -589,7 +589,6 @@ main {
     }
   }
 }
-
 /* Height Responsive  */
 @media (max-height: 850px) {
   .fixed-right-img {
@@ -662,11 +661,7 @@ main {
 
   header {
     .navbar {
-      padding: 0 1.25rem;
-
-      .actions {
-        margin-top: 0.62rem;
-      }
+      padding: 0.3rem 1.25rem;
     }
   }
 
@@ -683,6 +678,28 @@ main {
 }
 
 @media (max-height: 400px) {
+  .side-menu {
+    .side-menu-wraper {
+      .logo {
+        flex-shrink: 0;
+        height: 30%;
+      }
+
+      .menu {
+        height: 100%;
+        overflow-y: auto;
+        scrollbar-width: auto;
+        scroll-behavior: smooth;
+        flex: 1;
+      }
+
+      .actions {
+        flex-shrink: 0;
+        padding-top: 0.6rem;
+      }
+    }
+  }
+
   .fixed-right-img {
     max-width: 20%;
   }
@@ -720,13 +737,21 @@ main {
     margin: 0.62rem;
 
     .main-wrapper {
-      max-height: 72dvh;
+      max-height: 86dvh;
     }
+  }
+
+  .fixed-right-img {
+    max-width: 16%;
   }
 }
 
-@media (max-height: 450px) {
-  .fixed-right-img {
-    max-width: 16%;
+@media (max-height: 450px) and (max-width: 860px) {
+  main {
+    margin: 0.62rem;
+
+    .main-wrapper {
+      max-height: 72dvh;
+    }
   }
 }
