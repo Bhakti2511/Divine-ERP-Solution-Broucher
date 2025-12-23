@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-flow: column;
   background: linear-gradient(#001b2d38), url("10F1.jpg") center/cover no-repeat;
-  font-family:"Segoe UI light", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI light", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -49,7 +49,6 @@ header {
 
       .title {
         font-size: 1.25rem;
-        font-weight: 600;
       }
     }
 
@@ -346,7 +345,6 @@ main {
 
         .title {
           font-size: 1.2rem;
-          font-weight: 600;
         }
       }
 
@@ -368,7 +366,6 @@ main {
           cursor: pointer;
           backdrop-filter: blur(6px);
           border: 1px solid #051b2c;
-
           display: flex;
           align-items: center;
           justify-content: center;
@@ -597,7 +594,6 @@ main {
     .logo {
       .title {
         font-size: 1rem;
-        font-weight: 500;
       }
     }
 
