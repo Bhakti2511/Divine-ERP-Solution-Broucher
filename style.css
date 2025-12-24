@@ -18,7 +18,8 @@ body {
   overflow-y: hidden;
 }
 
-header {
+header,
+footer {
   display: none;
 }
 
@@ -70,7 +71,7 @@ header {
 
         i {
           margin: 0px 0.62rem;
-                    width: 9%;
+          width: 9%;
         }
       }
 
@@ -322,6 +323,7 @@ main {
         cursor: pointer;
         background: none;
         border: none;
+        order: 2;
 
         .bar {
           display: block;
@@ -347,56 +349,74 @@ main {
           font-size: 1.2rem;
         }
       }
+    }
+  }
 
-      .actions {
+  footer {
+    display: flex;
+    justify-content: center;
+
+    .actions {
+      display: flex;
+      max-width: 27%;
+      padding: 0.5rem 1rem;
+      background-color: #122e4df7;
+      color: #dbe7f5;
+      position: fixed;
+      z-index: 1000;
+      align-items: center;
+      gap: 0.62rem;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      border-radius: 2rem;
+      bottom: 10px;
+      right: 10px;
+
+      span {
+        font-size: 1.4rem;
+      }
+
+      button {
+        min-width: 38px;
+        height: 38px;
+        padding: 0 0.62rem;
+        border: none;
+        border-radius: 6px;
+        background: #122e4d00;
+        font-size: 1rem;
+        cursor: pointer;
+        /* backdrop-filter: blur(6px);
+        border: 1px solid #4a6981; */
         display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 0.62rem;
-        flex-wrap: nowrap;
+        justify-content: center;
 
-        button {
-          min-width: 38px;
-          height: 38px;
-          padding: 0 0.62rem;
-          border: none;
-          border-radius: 6px;
-          background: #122e4d91;
-          font-size: 1rem;
-          cursor: pointer;
-          backdrop-filter: blur(6px);
-          border: 1px solid #4a6981;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+        transition: background-color 0.2s ease, transform 0.1s ease;
 
-          transition: background-color 0.2s ease, transform 0.1s ease;
-
-          i {
-            font-size: 1.25rem;
-          }
-
-          .fa-whatsapp {
-            color: #269346;
-          }
-
-          .fa-phone-volume {
-            color: #269346;
-          }
+        i {
+          font-size: 1.25rem;
         }
 
-        button:hover {
-          background: rgba(112, 168, 248, 0.25);
+        .fa-whatsapp {
+          color: #269346;
         }
 
-        button:active {
-          transform: scale(0.95);
+        .fa-phone-volume {
+          color: #269346;
         }
+      }
 
-        button:not(:has(i)) {
-          font-weight: bold;
-          font-size: 17px;
-        }
+      button:hover {
+        background: rgba(112, 168, 248, 0.25);
+      }
+
+      button:active {
+        transform: scale(0.95);
+      }
+
+      button:not(:has(i)) {
+        font-weight: bold;
+        font-size: 17px;
       }
     }
   }
@@ -408,6 +428,7 @@ main {
   main {
     .main-wrapper {
       width: 100%;
+      max-height: 80dvh;
     }
   }
 }
@@ -446,20 +467,6 @@ main {
 
         .title {
           font-size: 1rem;
-        }
-      }
-
-      .actions {
-        flex-wrap: wrap;
-
-        button {
-          min-width: 30px;
-          height: 32px;
-          padding: 0;
-
-          i {
-            font-size: 1rem;
-          }
         }
       }
     }
@@ -505,6 +512,13 @@ main {
       }
     }
   }
+
+  footer {
+    .actions {
+      max-width: 32%;
+      gap: 0.2rem;
+    }
+  }
 }
 
 @media (max-width: 307px) {
@@ -515,10 +529,12 @@ main {
       .logo {
         gap: 0.35rem;
       }
+    }
+  }
 
-      .actions {
-        gap: 0.35rem;
-      }
+  footer {
+    .actions {
+      max-width: 50%;
     }
   }
 
