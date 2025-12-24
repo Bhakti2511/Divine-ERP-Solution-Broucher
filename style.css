@@ -438,6 +438,7 @@ main {
 
       .logo {
         gap: 0.62rem;
+        flex-direction: column;
 
         img {
           height: 1.56rem;
@@ -449,7 +450,7 @@ main {
       }
 
       .actions {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
 
         button {
           min-width: 30px;
