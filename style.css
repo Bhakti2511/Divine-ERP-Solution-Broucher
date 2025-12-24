@@ -11,7 +11,7 @@ body {
   margin: 0;
   display: flex;
   flex-flow: column;
-  background: linear-gradient(#001b2d38), url("10F1.jpg") center/cover no-repeat;
+  background: linear-gradient(#001b2d38), url("https://divineerp-resource.s3.ap-south-1.amazonaws.com/wallpaper/aurora/10F1B3E1-036E-4920-A0EB-C8211DACD711.jpg") center/cover no-repeat;
   font-family: "Segoe UI light", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
