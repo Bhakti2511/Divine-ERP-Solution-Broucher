@@ -37,7 +37,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 86vh;
+    height: 86dvh;
 
     .logo {
       text-align: center;
@@ -632,8 +632,6 @@ main {
     overflow-y: hidden;
 
     .side-menu-wraper {
-      height: 86vh;
-
       .actions {
         button {
           min-width: 2rem;
