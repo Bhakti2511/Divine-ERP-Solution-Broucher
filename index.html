@@ -794,6 +794,16 @@
         });
       });
 
+            document.addEventListener("click", (e) => {
+        if (
+          navLinks.classList.contains("active") &&
+          !navLinks.contains(e.target) &&
+          !hamburger.contains(e.target)
+        ) {
+          navLinks.classList.remove("active");
+        }
+      });
+
       // for side menu hover effect on scroll
       document.addEventListener("DOMContentLoaded", () => {
         const wrapper = document.querySelector(".main-wrapper");
