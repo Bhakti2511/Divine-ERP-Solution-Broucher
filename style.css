@@ -357,7 +357,7 @@ main {
 
     .actions {
       display: flex;
-      max-width: 27%;
+      max-width: 30%;
       padding: 0.5rem 1rem;
       background-color: #122e4df7;
       color: #dbe7f5;
