@@ -11,7 +11,9 @@ body {
   margin: 0;
   display: flex;
   flex-flow: column;
-  background: linear-gradient(#001b2d38), url("https://divineerp-resource.s3.ap-south-1.amazonaws.com/wallpaper/aurora/10F1B3E1-036E-4920-A0EB-C8211DACD711.jpg") center/cover no-repeat;
+  background: linear-gradient(#07182be0),
+    url("https://divineerp-resource.s3.ap-south-1.amazonaws.com/wallpaper/aurora/C0EDFF8E-7FF2-4774-83A2-772B25B624B6.jpg")
+      center/cover no-repeat;
   font-family: "Segoe UI light", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -82,7 +84,7 @@ footer {
       }
 
       a.active {
-        background: #07182b;
+        background: #041324;
         color: #fff;
       }
     }
@@ -176,7 +178,7 @@ main {
     .section {
       .head_1 {
         font-size: 1.5rem;
-        background-color: #07182b;
+        background-color: #041324;
         color: #dbe7f5;
         padding: 0.62rem 1.25rem;
         border-radius: 0.1875rem 0 0 0.1875rem;
@@ -324,7 +326,7 @@ main {
         background: none;
         border: none;
         order: 2;
-        padding:0;
+        padding: 0;
 
         .bar {
           display: block;
