@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 html,
 body {
   height: 100dvh;
@@ -367,8 +366,7 @@ main {
     display: flex;
     justify-content: space-around;
 
-    .actions,
-    .resize {
+    .actions {
       display: flex;
       max-width: 30%;
       padding: 0.5rem 1rem;
@@ -405,10 +403,7 @@ main {
           font-size: 1.25rem;
         }
 
-        .fa-whatsapp {
-          color: #269346;
-        }
-
+        .fa-whatsapp,
         .fa-phone-volume {
           color: #269346;
         }
@@ -431,9 +426,32 @@ main {
     .resize {
       max-width: 29%;
       left: 10px;
+      display: flex;
+      padding: 0.5rem 1rem;
+      background-color: #122e4df7;
+      color: #dbe7f5;
+      position: fixed;
+      z-index: 1000;
+      align-items: center;
+      gap: 0.62rem;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      border-radius: 2rem;
+      bottom: 10px;
 
-      button {
+      span {
         color: #dbe7f5;
+        min-width: 38px;
+        height: 38px;
+        padding: 0 0.62rem;
+        border: none;
+        border-radius: 6px;
+        background: #122e4d00;
+        font-size: 1.3rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         i {
           color: #dbe7f5;
@@ -538,7 +556,7 @@ main {
   footer {
     .actions,
     .resize {
-      max-width: 32%;
+      max-width: 40%;
       gap: 0.2rem;
     }
   }
