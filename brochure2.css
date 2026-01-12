@@ -433,7 +433,6 @@ main {
       position: fixed;
       z-index: 1000;
       align-items: center;
-      gap: 0.62rem;
       flex-wrap: nowrap;
       justify-content: space-around;
       border-radius: 2rem;
