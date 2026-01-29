@@ -11,7 +11,8 @@ body {
   margin: 0;
   display: flex;
   flex-flow: column;
-  background: linear-gradient(#07182be0),
+  background:
+    linear-gradient(#07182be0),
     url("https://divineerp-resource.s3.ap-south-1.amazonaws.com/wallpaper/aurora/C0EDFF8E-7FF2-4774-83A2-772B25B624B6.jpg")
       center/cover no-repeat;
   font-family: "Segoe UI light", Tahoma, Geneva, Verdana, sans-serif;
@@ -65,7 +66,9 @@ footer {
         color: #dbe7f5;
         text-decoration: none;
         font-size: 0.93rem;
-        transition: background 0.2s ease, color 0.2s ease;
+        transition:
+          background 0.2s ease,
+          color 0.2s ease;
         border-radius: 1.25rem;
         backdrop-filter: blur(6px);
         border: 1px solid #122e4d;
@@ -112,7 +115,9 @@ footer {
         align-items: center;
         justify-content: center;
 
-        transition: background-color 0.2s ease, transform 0.1s ease;
+        transition:
+          background-color 0.2s ease,
+          transform 0.1s ease;
 
         i {
           font-size: 18px;
@@ -167,8 +172,11 @@ main {
     scrollbar-width: auto;
     scroll-behavior: smooth;
     scrollbar-gutter: stable edges;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    box-shadow:
+      rgba(0, 0, 0, 0.09) 0px 2px 1px,
+      rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px,
+      rgba(0, 0, 0, 0.09) 0px 16px 8px,
       rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
     &::-webkit-scrollbar {
@@ -211,6 +219,10 @@ main {
         letter-spacing: 1px;
         font-weight: 100;
         color: #dbe7f5;
+
+        &::selection {
+          background-color: #063569;
+        }
       }
 
       li > ul {
@@ -265,7 +277,7 @@ main {
 
   main {
     width: 90%;
-    top:-10px;
+    top: -10px;
   }
 }
 
@@ -315,7 +327,9 @@ main {
           text-decoration: none;
           font-size: 0.9rem;
           font-weight: 600;
-          transition: background 0.2s ease, color 0.2s ease;
+          transition:
+            background 0.2s ease,
+            color 0.2s ease;
 
           i {
             margin: 0 0.62rem;
@@ -398,7 +412,9 @@ main {
         align-items: center;
         justify-content: center;
 
-        transition: background-color 0.2s ease, transform 0.1s ease;
+        transition:
+          background-color 0.2s ease,
+          transform 0.1s ease;
 
         i {
           font-size: 1.25rem;
